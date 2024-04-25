@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrab link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+
+<!--font awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div id="container" class="container">
+    <div>
+        <i class="fa fa-quote-right" aria-hidden="true" id="start"></i>
+        <div id="quots"></div>
+        <i class="fa fa-quote-left" aria-hidden="true" id="end"></i>
+        <button type="button" class="btn btn-dark">Our Quots <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    </div>
+</div>
+
+
+
+
+    <script>
+        let btn=document.querySelector('.btn');
+        let div=document.getElementById('quots');
+        let arrayOfquotes=[
+        "Hope is the heartbeat of the soul,Hope is the heartbeat of the soul.",
+        "The purpose of our lives is to be happy,The purpose of our lives is to be happy." ,
+        "The only thing stronger than fear is hope, The only thing stronger than fear is hope." ,
+        "Life is either a daring adventure or nothing at all.",
+        "Goals transform a random walk into a chase,Goals transform a random walk into a chase.",
+        "The only way to do great work is to love what you do.",
+        "Set your goals high, and don't stop till you get there." ,
+        "Hope is a waking dream,Hope is a waking dream.",
+        "Hope is passion for what is possible,Hope is passion for what is possible",
+        "Life is really simple, but we insist on making it complicated." ,
+        "The best way to predict the future is to create it." ,
+        "You are never too old to set another goal or to dream a new dream." 
+        ];
+        btn.addEventListener('click',function(){
+            let randomIndex = Math.floor(Math.random() * arrayOfquotes.length);
+            div.innerHTML = arrayOfquotes[randomIndex];
+        });
+    </script>
+</body>
+</html>
