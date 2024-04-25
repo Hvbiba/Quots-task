@@ -58,9 +58,11 @@ body{
     #container{
         margin: 130px 0px 0px 0px;
     }
-    #start , #end {
+    #start{
     padding: 0px 0px 0px 13px;
-
+    }
+    #end {
+        padding: 0px 13px 0px 0px;
     }
 
 }
